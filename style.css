@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.section-main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/leaves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-main img{
+    width:350px;
+    border-radius: 25%;
+    height: auto;
+    outline: 3px solid rgb(239, 232, 219);
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.section-main h1{
+    color: rgb(239, 232, 219);
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.section-main h1 span{
+    color: rgb(214, 214, 74);
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+header.sticky{
+    background-color: rgb(116, 116, 19);
+    padding: 15px 100px;
+}
+
+header .brand{
+    color: rgb(237, 214, 214);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Lobster";
+    color: white;
+    cursor:default;
+}
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+header .menu a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    padding: 2px 15px;
+    border-radius: 6px;
+    border: white 1px solid;
+    transition: .3s;
+}
+
+header .menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+header .btn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.section-two{
+    min-height: 10vh;
+    padding: 20px 100px;
+    line-height: 30px;
+}
+.section-two h2{
+    color: rgb(50, 29, 29);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.section-two p{
+    font-size: 30px;
+    margin: 30px 0;
+    line-height: 55px;
+}
+
+.section-3{
+    background-image: url(/leaves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 100px;
+    
+    display: block;
+    justify-content: center;
+    align-items:start;
+}
+
+.section-3 h1{
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 190px;
+    color: rgb(214, 214, 74);
+    text-align: center;
+}
+
+.section-3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 11px;
+    margin-top: 30%;
+    text-align: center;
+}
+
+
+
+.section-3 img:last-child{
+    margin-bottom: 20%;
+}
+
+.section-3 img:hover{
+    box-shadow: 1px 1px 25px yellow;
+    transition: 0.1s;
+}
+
+.section-3 label{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgb(255, 255, 0);
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.contact h1{
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(116, 116, 19);
+    text-shadow: 0 0 15px rgb(176, 176, 3);
+    margin-bottom: 3%;
+    padding: 20px;
+}
+
+.contact form{
+    width: 1200px;
+    text-align: center;
+   
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid rgb(138, 138, 8);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: 12px 0;
+}
+
+.field.error .item{
+    border-color: red;
+    box-shadow: 0 0 10px red;
+}
+
+.field.error .error-text{
+    display: block;
+}
+
+.field .item::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: 12px 32px;
+    background-color: rgb(125, 125, 4);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(250, 245, 0);
+    transition: .4s;
+}
+
+form button:hover{
+    background-color: transparent;
+    color: black;
+    outline: 1px solid rgb(125, 125, 4);
+}
+
+form button:active{
+    opacity: .5;
+}
+
+.field .error-text{
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+form .textarea-field .error-text{
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1060px){
+    header .btn{
+        display: block;
+    }
+    header .menu{
+        position: fixed;
+        background-color: rgb(41, 41, 33);
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    header .menu.active{
+        right: 0;
+    }
+
+
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+    header .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+    .section-3 h1{
+        margin-top: 20%;
+        font-size: 90px;
+    }
+    .contact h1{
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .last-btn{
+        margin-bottom: 15%;
+    }
+    .contact form{
+        width: 900px;
+        text-align: center;
+       
+    }
+}
+
+@media (max-width:630px){
+    .section-main h1{
+        font-size: 70px;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .section-two p{
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .section-3 label{
+        font-size: 50px;
+    }
+    .section-3 img{
+        width: 90%;
+    }
+    .section-3 h1{
+        font-size: 60px;
+    }
+    .contact form{
+        width:550px;
+        text-align: center;
+    }
+    .section-main img{
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+@media (max-width:400px){
+
+    .section-main h1{
+        font-size: 60px;
+        line-height: 60px;
+        font-family: 200;
+    }
+
+    .section-main img{
+        width: 90%;
+    }
+
+    .section-two p{
+        font-size: 15px;
+    }
+    .section-3 label{
+        font-size: 30px;
+    }
+    .section-3 label:last-child{
+        width: 200px;
+    }
+    .section-3 img{
+        width: 110%;
+    }
+    .section-3 h1{
+        font-size: 43px;
+        text-align: center;
+    }
+
+    .contact form{
+        width: 93%;
+        text-align: center;
+    }
+
+    .field .item{
+        width: 100%;
+        font-size: 10px;
+        
+    }
+    
+    .field .error-text{
+        font-size: 9.5px;
+        
+    }
+
+    form .textarea-field .item{
+        width: 90%;
+    }
+
+}

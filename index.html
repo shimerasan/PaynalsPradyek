@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paynal Pradyek</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <p class="brand">ASAN</p>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="section-main" id="about">
+      <h1>Hi I'm <span>SHIMER ASAN</span></h1>
+      <img src="/mabuot.jpg" alt="Mabuot" />
+    </section>
+
+    <div class="about-me">
+      <section class="section-two">
+        <h2>About</h2>
+        <p>
+          Welcome to my digital hub! I'm Shimer Asan, a 18-year-old pursuing a
+          Bachelor of Information Technologies (BSIT) at ISUFST in Barotac
+          Nuevo. Join me as I explore the dynamic world of Information
+          Technologies, sharing insights and projects that shape our digital
+          future. Let's connect and innovate together!
+        </p>
+      </section>
+    </div>
+
+    <section class="section-3" id="project">
+      <h1>PROJECTS</h1>
+
+      <img src="/cheff.gif" alt="cheff" id="cheff" />
+      <label for="cheff">Cheff</label>
+
+      <img src="/1715738496301.jpeg" alt="mp4/mp3" id="mp4-mp3" />
+      <label for="mp4/mp3">mp3/mp4</label>
+
+      <img
+        src="/1715738496275.jpeg"
+        alt="registration-form"
+        id="registration-form"
+      />
+      <label for="registration-form">Registration</label>
+
+      <img src="/1715738496288.jpeg" alt="movie-form" id="movie-form" />
+      <label for="movie form">movie-form</label>
+    </section>
+
+    <section class="contact" id="contact">
+      <form action="#" id="my-contact">
+        <h1>contact</h1>
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-text">Full Name can't be blank</div>
+          </div>
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Email Address"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-text email">Email Address can't be blank</div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-text">Phone Number can't be blank</div>
+          </div>
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-text">Subject can't be blank</div>
+          </div>
+        </div>
+
+        <div class="textarea-field field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="item"
+            autocomplete="off"
+          ></textarea>
+          <div class="error-text">Message can't be blank</div>
+        </div>
+        <button type="submit" class="last-btn">Send Message</button>
+      </form>
+    </section>
+
+    <script src="/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/contact.js"></script>
+  </body>
+</html>
